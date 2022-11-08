@@ -2,7 +2,7 @@ name: Build and test eshop
 
 
 on:
-  workflow_dispatch;
+  workflow_dispatch:
 
 jobs:
   Install:
