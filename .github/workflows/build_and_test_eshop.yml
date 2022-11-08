@@ -3,7 +3,7 @@ name: Build and test eshop
 
 on:
   workflow_dispatch:
-  on push:
+  push:
 
 jobs:
   Install:
