@@ -66,7 +66,7 @@ jobs:
             ~/.npm
             ./node_modules
             ./build
-          key: ${{ runner.os }}-build-${{ github.run_id }}
+          key: ${{ runner.os }}--build-${{ github.run_id }}
           restore-keys: ${{ runner.os }}-build-${{ github.run_id }}
 
   Test:
@@ -113,7 +113,7 @@ jobs:
           ~/.npm
           ./node_modules
           ./build
-        key: ${{ runner.os }}-build-${{ github.run_id }}
+        key: ${{ runner.os }}--build-${{ github.run_id }}
 
      - name: Deploy to Firebase
        uses: lowply/deploy-firebase@v0.0.5
